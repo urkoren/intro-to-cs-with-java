@@ -41,11 +41,9 @@ public class Congruent
         double b2 = Math.sqrt(Math.pow((x23 - x22), 2) + Math.pow((y23 - y22), 2));
         double c2 = Math.sqrt(Math.pow((x21 - x23), 2) + Math.pow((y21 - y23), 2));
 
-        if ((a1 == a2) && ((b1 == b2) && (c1 == c2) || ((b1 == c2) && (c1 == b2))))
-            System.out.println("The triangles are congruent");
-        else if ((a1 == b2) && ((b1 == a2) && (c1 == c2) || ((b1 == c2) && (c1 == a2))))
-            System.out.println("The triangles are congruent");
-        else if ((a1 == c2) && ((b1 == a2) && (c1 == b2) || ((b1 == b2) && (c1 == a2))))
+        if ((a1 == a2) && ((b1 == b2) && (c1 == c2) || ((b1 == c2) && (c1 == b2))) ||
+            (a1 == b2) && ((b1 == a2) && (c1 == c2) || ((b1 == c2) && (c1 == a2))) ||
+            (a1 == c2) && ((b1 == a2) && (c1 == b2) || ((b1 == b2) && (c1 == a2))) )
             System.out.println("The triangles are congruent");
         else
             System.out.println("The triangles are not congruent");
