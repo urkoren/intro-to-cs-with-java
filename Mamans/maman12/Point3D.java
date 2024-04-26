@@ -14,27 +14,26 @@ public class Point3D
     ///// Constructures /////
     /////////////////////////
 
-    // Init constructor
+    // Empty constructor
     public Point3D(){
-        _x = 0;
-        _y = 0;
-        _z = 0;
+        setPoint(0, 0, 0);
     }
 
     // Set constructor.
     public Point3D(double x, double y, double z){
-        _x = x;
-        _y = y;
-        _z = z;
+        setPoint(x, y, z);
     }
 
     // Copy constructor.
     public Point3D(Point3D other){
-        this._x = other._x;
-        this._y = other._y;
-        this._z = other._z;
+        setPoint(other._x, other._y, other._z);
     }
 
+    private void setPoint(double x, double y, double z){
+        setX(x);
+        setY(y);
+        setZ(z);
+    }
     /////////////////////////
     ///// Get methods ///////
     /////////////////////////
