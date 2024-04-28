@@ -1,5 +1,3 @@
-package Mamans.maman12;
-
 public class StudentTesterPoint3D {
     public static void main(String[] args) {
         System.out.println("********************************************************************************************************************************");
